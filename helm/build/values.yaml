@@ -1,0 +1,15 @@
+app:
+  name: ryanj-poi-gateway-app
+  namespace: ryanj
+  cluster: .apps.rosa-8lznb.l07n.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-connect/ryanj-gateway
+  org: rhdh-connect
+  name: ryanj-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ryanj/poi-gateway-app
+  tag: latest
